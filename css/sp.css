@@ -1,0 +1,303 @@
+/* スマホ向けCSS */
+
+@media screen and (max-width:767px) {
+    body {
+        background: #fcfdf5;
+    }
+    #wrap {
+        overflow: hidden;
+    }
+    #header {
+        width: 100%;
+        text-align: center;
+    }
+    #header .title_logo img {
+        width: 70%;
+        height: 70%;
+        margin: 0;
+    }
+    #header .title_bar .sns {
+        text-align: right;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        margin-right: 15px;
+    }
+    .title_bar .sns .facebook {
+        margin-right: 10px;
+        width: 10%;
+        height: 10%;
+    }
+    .title_bar .sns .twitter {
+        margin-right: 10px;
+        width: 10%;
+        height: 10%;
+    }
+    .title_bar .sns .google {
+        width: 10%;
+        height: 10%;
+    }
+
+    .title_image{
+      max-width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    .sp_none img{
+      display: none;
+        width:90%;
+    }
+
+    .title_icon{
+      width: 150px;
+      height: 250px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding:0 0 0 0;
+      margin:auto;
+      list-style:none;
+    }
+
+    .icon_box04{
+      position: absolute;
+      bottom: 20%;
+      margin:auto;
+      list-style: none;
+      right: 0;
+      left:0;
+        width: 100%;
+  }
+
+  .icon_box04 img{
+      width: 320px;
+      height: 56px;
+  }
+
+
+/*アイコンのz-index指定*/
+
+    .icon_box01{
+      position: relative;
+      z-index: 1;
+    }
+    .icon_box02{
+      position: relative;
+      z-index: 3;
+    }
+    .icon_box03{
+      position: relative;
+      z-index: 1;
+    }
+
+/*アニメーション*/
+.load {
+    position: absolute;
+    width: 150px;
+    height: 130px;
+    -webkit-animation: spin 1.5s linear infinite;
+    -moz-animation: spin 1.5s linear infinite;
+    -ms-animation: spin 1.5s linear infinite;
+    -o-animation: spin 1.5s linear infinite;
+    animation: spin 8s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {-webkit-transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin {
+  0% {-moz-transform: rotate(0deg);}
+  100% {-moz-transform: rotate(360deg);}
+}
+@-ms-keyframes spin {
+  0% {-ms-transform: rotate(0deg);}
+  100% {-ms-transform: rotate(360deg);}
+}
+@-o-keyframes spin {
+  0% {-o-transform: rotate(0deg);}
+  100% {-o-transform: rotate(360deg);}
+}
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+/*hover指定*/
+
+    .hover a{
+      /* transition */
+      -webkit-transition: 1s;
+      -moz-transition: 1s;
+      transition: 1s;
+    }
+
+    a:link {
+        color: #666666;
+    }
+    a:visited {
+        color: #666666;
+    }
+    a:hover {
+        color: #3366ff;
+    }
+    a:active {
+        color: #3366ff;
+    }
+    h1 {
+        margin: 0.3em auto;
+    }
+    #header .cover_image {
+        width: 100%;
+    }
+    #header .cover_image img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    #header .header_text {
+        max-width: 100vw;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: left;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        line-height: 150%;
+        padding: 1.0em;
+    }
+    #header .header_text img {
+        display: none;
+    }
+    #header .sumaho_type img {
+        width: 50%;
+        height: 50%;
+        margin: 10px auto 0px;
+    }
+    #main_contents .map img {
+        width: 95%;
+        height: 95%;
+        display: block;
+        padding-left: 5px;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .map p {
+        display: none;
+    }
+    h2 {
+        font-size: 24px;
+        color: #996633;
+    }
+    .profile .imformation {
+        display: none;
+    }
+    .sumaho_type_imfo {
+        background: url(images/wood_back.png) no-repeat;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 13px;
+        line-height: 130%;
+        padding: 3px;
+        margin: 40px 0 30px;
+    }
+    .explanation .text {
+        width: 100%;
+        text-align: left;
+        font-size: 14px;
+        line-height: 120%;
+    }
+    .explanation .text .inside_text {
+        width: 95%;
+        margin: 0 10px;
+        padding-left: 5px;
+    }
+    .text .quoted p {
+        font-size: 9px;
+        line-height: 160%;
+        letter-spacing: 0.04em;
+        padding-left: 15px;
+    }
+    .explanation .image_photo img {
+        display: none;
+    }
+    .sumaho_type_photo img {
+        width: 70%;
+        height: 70%;
+        margin: 0 auto 2px;
+    }
+    #extra_shops img {
+        display: none;
+    }
+    #extra_shops_sumaho {
+        background: url(images/wood_back02.png) no-repeat;
+        width: 100%;
+        height: 100%;
+        margin: 3em 0 3em;
+        padding-top: 5px;
+        text-align: center;
+    }
+    .extra_shop_text h2 {
+        display: none;
+    }
+    .extra_shop_text {
+        width: 100%;
+    }
+    .extra_shop_photo p {
+        font-size: 11px;
+        text-align: left;
+        line-height: 120%;
+        margin-left: 15px;
+    }
+    .extra_shop_text p {
+        font-size: 14px;
+        text-align: left;
+        line-height: 120%;
+        margin: 20px 10px 10px;
+    }
+    .extra_shop_text .quoted p {
+        font-size: 9px;
+    }
+    .text .quoted {
+        word-break: break-all;
+    }
+    h3 {
+        color: #996633;
+    }
+    h3 small {
+        font-size: 8px;
+    }
+    hr {
+        width: 90%;
+        margin: 30px auto 40px;
+    }
+    footer {
+        width: 100%;
+        height: 120%;
+        height: auto;
+        background: #68502e;
+        margin-top: 30px;
+        text-align: center;
+        padding: 30px auto;
+    }
+    footer img {
+        display: none;
+    }
+    h4 {
+        color: #f5eee5;
+        font-size: 10px;
+        margin: 1.5em auto 0.3em;
+    }
+    footer small {
+        color: #f5eee5;
+        font-size: 8px;
+        margin-bottom: 1.5em;
+    }
+}

@@ -1,0 +1,12 @@
+/* --- Internet Explorerハック */
+
+	#object img,
+	#object2 img{
+		display:none\9;
+	}
+	
+	
+	.title_icon{
+	display:none\9;
+    }
+

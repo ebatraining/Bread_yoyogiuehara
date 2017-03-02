@@ -1,0 +1,73 @@
+
+.tossing{
+	animation-name: tossing;
+	-webkit-animation-name: tossing;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.8s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes tossing {
+	0% {
+		transform: rotate(-4deg);	
+	}
+	50% {
+		transform: rotate(4deg);
+	}
+	100% {
+		transform: rotate(-4deg);	
+	}						
+}
+
+@-webkit-keyframes tossing {
+	0% {
+		-webkit-transform: rotate(-4deg);	
+	}
+	50% {
+		-webkit-transform: rotate(4deg);
+	}
+	100% {
+		-webkit-transform: rotate(-4deg);	
+	}				
+}
+
+/* PC向けCSS */
+
+@media screen and (min-width:1280px) {
+	
+	#object{
+		width: 22%;
+		position: absolute;
+		z-index: 200;
+		left: 8%;
+		margin:-14% 0 0;
+	}
+	
+	#object2{
+		width: 24%;
+		position: absolute;
+		z-index: 200;
+		right: 10%;
+		margin:6% 0 0;
+		top:0;
+	}
+	
+	#object img,
+	#object2 img{
+		width:100%;
+	}
+		
+}
+	
+/* スマホ向けCSS */
+
+@media screen and (max-width:1279px) {
+	
+	#object img,
+	#object2 img{
+		display:none;
+	}
+}

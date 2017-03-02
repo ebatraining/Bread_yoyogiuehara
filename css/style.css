@@ -1,0 +1,455 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+html {
+    font-size: 100%;
+}
+
+body {
+    -webkit-text-size-adjust: 100%!important;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+    font-size: 100%;
+    line-height: 120%;
+    color: #666666;
+    letter-spacing: 0.05em;
+    background: #f0eedd;
+}
+
+.title_bar {
+    margin-top: 0;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#main_contents {
+    max-width: 100vw;
+    margin: auto;
+    background: #eeeeee;
+    position: relative;
+    z-index: 100;
+}
+
+.wrap{
+  max-width: 950px;
+  margin: auto;
+  text-align: center;
+  background: #ffffff;
+  padding: 10px;
+
+}
+
+img {
+    border: 0;
+}
+
+a:link {
+    color: #999999;
+}
+
+a:visited {
+    color: #999999;
+}
+
+a:hover {
+    color: #3366ff;
+}
+
+a:active {
+    color: #3366ff;
+}
+
+hr {
+    width: 95%;
+    height: 1px;
+    background: #999999;
+    color: #999999;
+}
+
+#back-top {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+}
+
+#back-top a {
+    /* transition */
+    text-decoration: none;
+    width: 60px;
+    padding:0;
+    text-align: center;
+    display: block;
+}
+
+#back-top a:hover{
+	text-decoration: none;
+}	
+
+/*アニメーション*/
+.load {
+    position: absolute;
+    width: 150px;
+    height: 130px;
+    -webkit-animation: spin 1.5s linear infinite;
+    -moz-animation: spin 1.5s linear infinite;
+    -ms-animation: spin 1.5s linear infinite;
+    -o-animation: spin 1.5s linear infinite;
+    animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+
+/* PC&タブレット端末向けCSS */
+
+@media screen and (min-width:768px) {
+
+
+
+    #wrapper {
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+	
+    img {
+        max-width: 100vw;
+    }
+
+    #header {
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    #header h1 {
+        max-width: 100vw;
+        max-height: auto;
+    }
+
+    #header .title_bar .sns {
+        max-width: 100vw;
+        height: auto;
+        text-align: right;
+    }
+
+    .title_bar .sns .facebook,
+    .title_bar .sns .twitter,
+    .title_bar .sns .google {
+        margin-right: 2%;
+    }
+
+    #header .title_bar  {
+        max-width: 90%;
+        height: 9%;
+        margin: 2% auto 0;
+    }
+
+    .title{
+        height: 85%;
+        margin: auto;
+        display: table;
+    }
+    
+    .title_box {
+        width: 90%;
+        height: 50%;
+        position: relative;
+        margin: auto;
+        display: table-cell;
+        vertical-align: middle;
+        
+    }
+
+    .title_image{
+      max-width: 1100px;
+      text-align: center;
+      margin: auto;
+        position: relative;
+    }
+
+    .title_image img{
+      width: 100%;
+      min-height: 100%;
+    }
+
+    .title_icon{
+      width: 150px;
+        height: 191px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin:7% auto;
+      list-style:none;
+      padding:0 0 0 0;
+    }
+
+/*アイコンのz-index指定*/
+
+    .icon_box01{
+      position: relative;
+      z-index: 1;
+    }
+    .icon_box02{
+      position: relative;
+      z-index: 3;
+    }
+    .icon_box03{
+      position: relative;
+      z-index: 1;
+    }
+
+/*hover指定*/
+
+    .hover a{
+      /* transition */
+      -webkit-transition: 1s;
+      -moz-transition: 1s;
+      transition: 1s;
+    }
+
+/*スマホタイトル画像*/
+    .icon_box04{
+      display: none;
+    }
+
+    #main_contents .map {
+        max-width: 100vw;
+        margin: 0 auto 5%;
+        height: auto;
+        text-align: center;
+		padding:2% 0;
+    }
+
+    #main_contents .map img {
+        max-width: 100vw;
+        margin: 0 auto;
+        height: auto;
+	}
+    .sumaho_type_imfo {
+        display: none;
+    }
+    .sumaho_type_photo {
+        display: none;
+    }
+    #extra_shops_sumaho {
+        display: none;
+    }
+    h3 {
+        display: none;
+    }
+    h4 {
+        display: none;
+    }
+    .profile .imformation {
+        width:420px;
+        height: 400px;
+        padding-top: 90px;
+        text-align: left;
+        margin-left: auto;
+    }
+    .profile .imformation p {
+        font-size: 12px;
+        letter-spacing: 0.05em;
+            margin-left: auto;
+    }
+    .explanation {
+        max-width: 950px;
+        margin-top: 20px;
+        padding: 0;
+        text-align: left;
+    }
+    .explanation .text {
+        max-width: 600px;
+        margin: 0;
+        padding-left: 25px;
+        display: inline-block;
+        *zoom: 1;
+    }
+    .text .quoted {
+        max-width: 100vw;
+        font-size: 12px;
+        display: block;
+    }
+    .explanation .text .inside_text {
+        max-width: 580px;
+    }
+    .explanation .image_photo {
+        max-width: 264px;
+        padding: 0;
+        vertical-align: top;
+        margin-left: 30px;
+        display: inline-block;
+        *zoom: 1;
+    }
+    .explanation .image_photo img {
+        width: 264px;
+        height: 182px;
+    }
+    #katane_bakery {
+        max-width: 100vw;
+        height: auto;
+        margin-bottom: 60px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #katane_bakery .profile {
+        max-width: 100%;
+        max-height: 260px;
+        background: url(../images/katane_bakery_top.gif) no-repeat;
+        background-position: center;
+    }
+    #main_mano {
+        max-width: 950px;
+        margin-bottom: 60px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #main_mano .profile {
+        max-width: 950px;
+        max-height: 260px;
+        background: url(../images/main_mano_top.gif) no-repeat;
+        background-position: center;
+    }
+    #levain {
+        max-width: 950px;
+        margin-bottom: 60px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #levain .profile {
+        max-width: 950px;
+        max-height: 260px;
+        background: url(../images/levain_top.gif) no-repeat;
+        background-position: center;
+    }
+    #p365days {
+        max-width: 950px;
+        margin-bottom: 60px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #p365days .profile {
+        max-width: 950px;
+        max-height: 260px;
+        background: url(../images/365days_top.gif) no-repeat;
+        background-position: center;
+    }
+    #jensen {
+        max-width: 950px;
+        margin-bottom: 60px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #jensen .profile {
+        max-width: 950px;
+        max-height: 260px;
+        background: url(../images/jensen_top.gif) no-repeat;
+        background-position: center;
+    }
+    #blau_mohn {
+        max-width: 950px;
+        margin-bottom: 60px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #blau_mohn .profile {
+        max-width: 100vw;
+        height: auto;
+        max-height: 260px;
+        background: url(images/Blau_mohn_top.gif) no-repeat;
+        background-position: center;
+    }
+    #extra_shops {
+        max-width: 950px;
+        margin: 0;
+    }
+    #extra_shops img {
+        max-width: 100vw;
+        height: auto;
+    }
+    .extra_shop_photo {
+        width: 340px;
+        margin-top: 15px;
+        margin-bottom: 40px;
+        text-align: left;
+        letter-spacing: 0.02em;
+        line-height: 110%;
+        display: inline-block;
+        *zoom: 1;
+    }
+    .extra_shop_photo img {
+        width: 300px;
+        height: 200px;
+    }
+    .extra_shop_photo p {
+        font-size: 12px;
+    }
+    .extra_shop_text {
+        max-width: 530px;
+        text-align: left;
+        margin-left: 20px;
+        padding: 0;
+        vertical-align: top;
+        display: inline-block;
+        *zoom: 1;
+    }
+    .extra_shop_text h2 {
+        font-size: 26px;
+        color: #996633;
+    }
+    .extra_shop_text .quoted {
+        display: block;
+        max-width: 100vw;
+        font-size: 12px;
+        padding-top: 10px;
+        word-wrap: break-word;
+    }
+    #ahiru_store {
+        max-width: 950px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    #tecona_bagle_works {
+        max-width: 950px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    #sora_to_kumo {
+        max-width: 950px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    #haritts {
+        max-width: 950px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    footer {
+        max-width: 950px;
+        background: #68502e;
+        margin-top: 70px;
+        text-align: right;
+        padding: 15px 0 15px 0;
+    }
+    footer img {
+        width: 100%;
+    }
+    footer small {
+        color: #f5eee5;
+        font-size: 12px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+	
+}
+
