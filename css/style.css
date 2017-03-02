@@ -366,7 +366,7 @@ hr {
         max-width: 100vw;
         height: auto;
         max-height: 260px;
-        background: url(images/Blau_mohn_top.gif) no-repeat;
+        background: url(../images/Blau_mohn_top.gif) no-repeat;
         background-position: center;
     }
     #extra_shops {
