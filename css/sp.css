@@ -181,16 +181,62 @@
         margin: 10px auto 0px;
     }
     #main_contents .map img {
-        width: 95%;
-        height: 95%;
-        display: block;
-        padding-left: 5px;
-        margin: 0 auto;
-        padding-top: 20px;
+        display: none;
     }
     .map p {
         display: none;
     }
+
+
+    /*0304追加*/
+    li{
+      list-style-type: none;
+      width: 48%;
+      padding: 0.5% 1%;
+      margin: 0 auto;
+    }
+    .nav_sp img{
+      width: 100%;
+    }
+    .nav_sp{
+      overflow: hidden;
+      margin: 0;
+      padding: 10% 0;
+      width: 100%;
+      background-image: url(../images/sp_backimg.jpg);
+      background-size: 234%;
+    }
+    .nav_sp ul{
+      width: 93%;
+      margin: 0 auto;
+      padding: 0;
+    }
+    .nav_left{
+      float: left;
+      margin: 0;
+    }
+    .nav_right{
+      float:right;
+      margin: 0;
+    }
+
+    .nav_left:hover{
+      opacity: 0.8;
+    }
+    .nav_right:hover{
+      opacity: 0.8;
+    }
+
+
+
+
+
+    /*ここまで*/
+
+
+
+
+
     h2 {
         font-size: 24px;
         color: #996633;

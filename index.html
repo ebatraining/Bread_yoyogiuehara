@@ -15,11 +15,11 @@
 		<script src="http://api.html5media.info/1.1.4/html5media.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="style_pc.css" media="screen" />
 		<![endif]-->
-        
+
         <!--[if lt IE 10]>
         <link rel="stylesheet" href="css/ie.css">
         <![endif]-->
-        
+
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/vegas.min.css" type="text/css" media="all">
 		<link rel="stylesheet" href="css/sp.css">
@@ -28,14 +28,24 @@
 		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 		<script src="js/smooth-scroll.js"></script>
 		<script type="text/javascript" src="js/smart-crossfade.js"></script>
-        <script src="js/scroll_top.js"></script>
-        <script src="http://jaysalvat.github.io/vegas/releases/latest/vegas.js"></script>
-        
+    <script src="js/scroll_top.js"></script>
+    <script src="http://jaysalvat.github.io/vegas/releases/latest/vegas.js"></script>
+		<script type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script>
+
+
+		<script>
+		$(function(){
+		  $('img[usemap]').rwdImageMaps();
+		});
+		</script>
+
+
+
         <script>
             $(window).scroll(function() {
                 $('#animatedElement').each(function(){
                 var imagePos = $(this).offset().top;
-        
+
                 var topOfWindow = $(window).scrollTop();
                     if (imagePos < topOfWindow+400) {
                         $(this).addClass("slideUp");
@@ -48,11 +58,11 @@
                 $(this).addClass("slideUp");
             });
        	</script>
-        
+
 	</head>
-	
+
     <body>
-    
+
     	<script>
 			$('body').vegas({
 		  overlay: true ,
@@ -83,7 +93,7 @@
 		</script> <!-- vegasスクリプト -->
 
 		<div id="wrapper">
-        
+
 			<header id="header">
 
                 <h1 class="title_bar">
@@ -93,10 +103,10 @@
                         <img src="images/icon_google.png" class="google" alt="グーグル">
                     </div>
                 </h1>
-    
+
                 <div class="title">
                     <div class="title_box">
-                    
+
                         <div class="title_image">
                             <div class="sp_none">
                                 <img src="images/top.png" alt="おいしいパンと暮らす街">
@@ -107,50 +117,65 @@
                                 <li class="icon_box03"><img src="images/top_icon02.png" alt="パンアイコン"></li>
                          　　</ul>
                         </div>
-                        
+
                         <!--スマホタイトル画像-->
                         <div class="icon_box04">
                             <img src="images/top_sp.png" alt="おいしいパンと暮らす街">
                         </div>
-                        
+
                     </div>
                 </div>
-                        
+
                 <div id="object" class="animate tossing">
                     <img src="images/pan1.png" alt="動くパン１">
                 </div>
-                
+
                 <div id="object2" class="animate tossing">
                     <img src="images/pan2.png" alt="動くパン２">
                 </div>
-                
+
             </header>
 
 			<div id="main_contents">
-          
+
 				<div class="wrap">
 
 					<div id="smoothplay">
 						<div class="map">
-							<p>地図上の番号をクリックするとお店の紹介ページが見れます。</p>
-							<img src="images/map.gif" alt="代々木上原・代々木公園　パン屋地図" usemap="#area_map" width="816" height="500">
-							<map id="area_map" name="area_map">
-								<area shape="circle" coords="232,24,10" href="index.html#katane_bakery" alt="MAP-1　カタネベーカリー">
-								<area shape="circle" coords="152,199,10" href="index.html#main_mano" alt="MAP-2　マンマーノ">
-								<area shape="circle" coords="398,369,10" href="index.html#levain" alt="MAP-3　ルヴァン">
-								<area shape="circle" coords="609,260,10" href="index.html#p365days" alt="MAP-4　365日">
-								<area shape="circle" coords="479,220,10" href="index.html#jensen" alt="MAP-5　イエンセン">
-								<area shape="circle" coords="316,232,10" href="index.html#blau_mohn" alt="MAP-6　ブラウモーン">
-								<area shape="circle" coords="737,485,12" href="index.html#ahiru_store" alt="MAP-7　アヒルストア">
-								<area shape="circle" coords="582,295,10" href="index.html#tecona_bagle_works" alt="MAP-8　テコナベーグルワークス">
-								<area shape="circle" coords="144,378,10" href="index.html#sora_to_kumo" alt="MAP-9　そらとくも">
-								<area shape="circle" coords="188,250,10" href="index.html#haritts" alt="MAP-10　ハリッツ">
-							</map>
-						</div>
+						<img src="./images/map_img_design01_02.jpg" usemap="#area_map" width="950" height="866" alt="代々木上原・代々木公園　パン屋地図" />
+						<map name="area_map" id="area_map">
+						  <area shape="circle" coords="309,338,43" href="index.html#katane_bakery" alt="カタネベーカリー" />
+						  <area shape="circle" coords="158,454,61" href="index.html#main_mano" alt="main_mano" />
+						  <area shape="circle" coords="459,723,77" href="index.html#levain" alt="levain" />
+						  <area shape="circle" coords="696,507,47" href="index.html#p365days" alt="365days" />
+						  <area shape="circle" coords="505,447,78" href="index.html#jensen" alt="jensen" />
+						  <area shape="circle" coords="396,546,48" href="index.html#blau_mohn" alt="blau_mohn" />
+						  <area shape="circle" coords="776,746,28" href="index.html#ahiru_store" alt="アヒルストア" />
+						  <area shape="circle" coords="648,579,29" href="index.html#tecona_bagle_works" alt="tecona_bagle_works" />
+						  <area shape="circle" coords="189,661,27" href="index.html#sora_to_kumo" alt="そらとくも" />
+						  <area shape="circle" coords="234,533,26" href="index.html#haritts" alt="haritts" />
+						</map>
 					</div>
 
+
+						<!--0304追加分-->
+						<nav class="nav_sp">
+							<ul>
+								<li class="nav_left"><a href="index.html#katane_bakery"><img src="./images/katane.png" alt="カタネベーカリー"></a></li>
+								<li class="nav_right"><a href="index.html#main_mano"><img src="./images/main.jpg" alt="main_mano"></a></li>
+								<li class="nav_left"><a href="index.html#levain"><img src="./images/levain.png" alt="levain"></a></li>
+								<li class="nav_right"><a href="index.html#p365days"><img src="./images/365.png" alt="365days"></a></li>
+								<li class="nav_left"><a href="index.html#jensen"><img src="./images/jensen.png" alt="jensen"></a></li>
+								<li class="nav_right"><a href="index.html#blau_mohn"><img src="./images/blau.png" alt="blau_mohn"></a></li>
+								<li class="nav_left"><a href="index.html#ahiru_store"><img src="./images/ahiru.png" alt="アヒルストア"></a></li>
+								<li class="nav_right"><a href="index.html#tecona_bagle_works"><img src="./images/tecona.png" alt="techona_bagle_works"></a></li>
+								<li class="nav_left"><a href="index.html#sora_to_kumo"><img src="./images/soratokumo.png" alt="そらとくも"></a></li>
+								<li class="nav_right"><a href="index.html#haritts"><img src="./images/haritts.png" alt="haritts"></a></li>
+							</ul>
+						</nav>
+
 					<div id="katane_bakery">
-                    
+
 						<div class="profile">
 								<div class="imformation">
 									<p>Tel　　　：03-3466-9834<br>
@@ -187,14 +212,14 @@
 										<a href="http://baguettelife.com/2012/12/05/katane/" target="_blank">
 										写真出典：http://baguettelife.com/2012/12/05/katane/</a></p>
 								</div><!-- quoted -->
-                                
+
 							</div><!-- text -->
 
 							<div class="image_photo">
 								<img src="images/katane01.gif" alt="カタネベーカリー　パン写真"><br>
 								<img src="images/katane02.gif" alt="カタネベーカリー　パン写真">
 							</div>
-                            
+
 							<div class="sumaho_type_photo">
 								<img src="images/katane03.jpg" alt="カタネベーカリー　外観写真"><br>
 								<img src="images/katane01.gif" alt="カタネベーカリー　パン写真">
@@ -205,9 +230,9 @@
 					</div><!-- katane_bakery  -->
 
 					<div id="main_mano">
-                    
+
 						<div class="profile">
-                        
+
 							<div class="imformation">
 								<p>Tel　　　：03-6416-8022<br>
 								Adress　：東京都渋谷区西原3-6-5<br>
@@ -261,7 +286,7 @@
 					<div id="levain">
 
 						<div class="profile">
-                        
+
 								<div class="imformation">
 									<p>Tel　　　：03-3468-9669<br>
 									Adress　：東京都渋谷区富ヶ谷2-43-13<br>
@@ -304,7 +329,7 @@
 								<img src="images/levain01.gif" alt="ルヴァン　店内写真"><br>
 								<img src="images/levain02.gif" alt="ルヴァン　カフェ写真">
 							</div>
-                            
+
 							<div class="sumaho_type_photo">
 								<img src="images/levain03.jpg" alt="ルヴァン　外観写真"><br>
 								<img src="images/levain01.gif" alt="ルヴァン　店内写真">
@@ -315,9 +340,9 @@
 					</div><!-- levain  -->
 
 					<div id="p365days">
-                    
+
 						<div class="profile">
-                        
+
 								<div class="imformation">
 									<p>Tel　　　：03-6804-7357<br>
 									Adress　：東京都渋谷区富ヶ谷1-6-12<br>
@@ -371,7 +396,7 @@
 					<div id="jensen">
 
 						<div class="profile">
-                        
+
 								<div class="imformation">
 									<p>Tel　　　：03-3465-7843<br>
 									Adress　：東京都渋谷区元代々木町４－３<br>
@@ -464,7 +489,7 @@
 								<img src="images/blau_mohn01.gif" alt="ブラウモーン　パン写真"><br>
 								<img src="images/blau_mohn02.gif" alt="ブラウモーン　パン写真">
 							</div>
-                            
+
 							<div class="sumaho_type_photo">
 								<img src="images/blau_mohn03.jpg" alt="ブラウモーン　外観写真"><br>
 								<img src="images/blau_mohn02.gif" alt="イエンセン　店内写真">
@@ -514,7 +539,7 @@
 							   <a href="http://tecona.jp/" target="_blank">
 							   HP　　：http://tecona.jp/</a></p>
 						</div>
-                        
+
 						<div class="extra_shop_text">
 							  <h2>tecona bagle works  （MAP-8）</h2>
 							  <p>パンの１種、ベーグルを専門に扱うテコナ ベーグル ワークス。<br>代々木公園駅近くの路地裏、地下への階段を降りたところにあるこの店は、多くのベーグル好き、パン好きが訪れる有名店。<br>扱うベーグルは、大きく分けて３種類。テコナオリジナル酵母を使った「もちもち」、丹沢酵母を使ってずっしりとした食感の「むぎゅむぎゅ」、イーストを使ってふっくらと焼き上げた「ふかふか」。<br>ベーグルを焼く店長は元パティシエで、それぞれのベーグルに最適なフレーバー（具材）を組み合わせて、常時２５～３０種類をそろえる。<br>プレーンベーグルに具材をぎっしり詰めたサンド系も人気。<br></p>
@@ -538,7 +563,7 @@
 							   <a href="http://www.sorato-kumoto.jp/index.html" target="_blank">
 							   HP　　：http://www.sorato-kumoto.jp/index.html</a></p>
 						</div>
-                        
+
 						<div class="extra_shop_text">
 							  <h2>そらとくも  （MAP-９）</h2>
 							  <p>元々は八ヶ岳の麓にオープンしていた同店だが、2014年12月、ベーグルを中心としたパンと焼き菓子の店を代々木上原にオープン。<br>ここは元マルイチベーグル、リリー・オブ・ザ・バレーの巣立っていった、言わばベーグルのレジェンド的な場所。<br>メインのベーグルのベースは２種類あり、自家製の酒粕酵母にて発酵した生地を使ったシンプルな「そらベーグル」と、八ヶ岳の米粉を入れたふっくら生地に具材をゴロゴロ巻き込んだ「くもベーグル」。<br>週の半分は八ヶ岳で営業していることもあり、代々木上原で営業しているのは金曜～月曜のみで、時間帯によっては売り切れてしまうことも。<br></p>
@@ -562,7 +587,7 @@
 							   <a href="http://kori.to/column/haritts/" target="_blank">
 							   HP　　：http://kori.to/column/haritts/</a></p>
 						</div>
-                        
+
 						<div class="extra_shop_text">
 							  <h2>haritts  （MAP-10）</h2>
 							  <p>元OLだった姉妹二人が、代々木上原の古民家を改装して2006年にオープンさせた、ドーナツとコーヒーの店。<br>プレーンやクリームチーズなどの定番メニューに日替わりメニューを加え、毎日８種類ほど出しているがすぐに売れてしまうため、時間帯によってはショーケースに並んでいるのは１種類のみのことも。<br>ドーナツの概念をくつがえす「ふわふわ・もちもち」感は多くのファンを作り、リピーターになる客がほとんど。<br>また落ち着いたカフェスペースでは、ハリッツ・スペシャリティ・ブレンドの美味しいコーヒーと共に、焼きたてのドーナツがいただける。<br></p>
@@ -599,5 +624,5 @@
 		</script>
 
 	</body>
-    
+
 </html>
