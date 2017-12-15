@@ -19,6 +19,7 @@ body {
     background: #f0eedd;
 }
 
+
 .title_bar {
     margin-top: 0;
 }
@@ -246,7 +247,7 @@ hr {
       height: auto;
     }
 
-    .nav_sp{
+    .drawer-nav{
       display: none;
     }
 

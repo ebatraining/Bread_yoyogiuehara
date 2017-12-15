@@ -25,14 +25,25 @@
 		<link rel="stylesheet" href="css/sp.css">
         <link rel="stylesheet" href="css/animations.css">
 
-		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="js/smooth-scroll.js"></script>
 		<script type="text/javascript" src="js/smart-crossfade.js"></script>
     <script src="js/scroll_top.js"></script>
     <script src="http://jaysalvat.github.io/vegas/releases/latest/vegas.js"></script>
 		<script type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script>
-
-
+		<!--ここからコピペ-->
+		<link rel="stylesheet" href="css/drawer.css">
+		<script src="js/drawer.js"></script>
+		<script src="js/iscroll.js"></script>
+		<script>
+		$(document).ready(function() {
+  		$(".drawer").drawer();
+			$('.drawer-nav li a').on('click', function() {
+			$('.drawer').drawer('close');
+			});
+			});
+		</script>
+		<!--ここまでコピペ-->
 		<script>
 		$(function(){
 		  $('img[usemap]').rwdImageMaps();
@@ -61,7 +72,8 @@
 
 	</head>
 
-    <body>
+	<body class="drawer drawer--left">
+
 
     	<script>
 			$('body').vegas({
@@ -158,22 +170,29 @@
 					</div>
 
 
+						<!-- ハンバーガーボタン -->
+						<button type="button" class="drawer-toggle drawer-hamburger">
+						  <span class="sr-only">toggle navigation</span>
+						  <span class="drawer-hamburger-icon"></span>
+						</button>
 						<!--0304追加分-->
-						<nav class="nav_sp">
-							<ul>
-								<li class="nav_left"><a href="index.html#katane_bakery"><img src="./images/katane.png" alt="カタネベーカリー"></a></li>
-								<li class="nav_right"><a href="index.html#main_mano"><img src="./images/main.jpg" alt="main_mano"></a></li>
-								<li class="nav_left"><a href="index.html#levain"><img src="./images/levain.png" alt="levain"></a></li>
-								<li class="nav_right"><a href="index.html#p365days"><img src="./images/365.png" alt="365days"></a></li>
-								<li class="nav_left"><a href="index.html#jensen"><img src="./images/jensen.png" alt="jensen"></a></li>
-								<li class="nav_right"><a href="index.html#blau_mohn"><img src="./images/blau.png" alt="blau_mohn"></a></li>
-								<li class="nav_left"><a href="index.html#ahiru_store"><img src="./images/ahiru.png" alt="アヒルストア"></a></li>
-								<li class="nav_right"><a href="index.html#tecona_bagle_works"><img src="./images/tecona.png" alt="techona_bagle_works"></a></li>
-								<li class="nav_left"><a href="index.html#sora_to_kumo"><img src="./images/soratokumo.png" alt="そらとくも"></a></li>
-								<li class="nav_right"><a href="index.html#haritts"><img src="./images/haritts.png" alt="haritts"></a></li>
+
+							<nav class="drawer-nav">
+  							<ul class="drawer-menu">
+								<li class="nav_left"><a href="#katane_bakery"><img src="./images/katane.png" alt="カタネベーカリー"></a></li>
+								<li class="nav_right"><a href="#main_mano"><img src="./images/main.jpg" alt="main_mano"></a></li>
+								<li class="nav_left"><a href="#levain"><img src="./images/levain.png" alt="levain"></a></li>
+								<li class="nav_right"><a href="#p365days"><img src="./images/365.png" alt="365days"></a></li>
+								<li class="nav_left"><a href="#jensen"><img src="./images/jensen.png" alt="jensen"></a></li>
+								<li class="nav_right"><a href="#blau_mohn"><img src="./images/blau.png" alt="blau_mohn"></a></li>
+								<li class="nav_left"><a href="#ahiru_store"><img src="./images/ahiru.png" alt="アヒルストア"></a></li>
+								<li class="nav_right"><a href="#tecona_bagle_works"><img src="./images/tecona.png" alt="techona_bagle_works"></a></li>
+								<li class="nav_left"><a href="#sora_to_kumo"><img src="./images/soratokumo.png" alt="そらとくも"></a></li>
+								<li class="nav_right"><a href="#haritts"><img src="./images/haritts.png" alt="haritts"></a></li>
 							</ul>
 						</nav>
 
+<section class="drawer-contents"><!--ここも足したとこ-->
 					<div id="katane_bakery">
 
 						<div class="profile">
@@ -616,7 +635,7 @@
 			</div><!-- main_contents  -->
 
 		</div> <!-- wrapper  -->
-
+</section><!--ここも足したとこ-->
 		<!-- ボディの最後あたり -->
 		<script>
 			// スムーススクロールを起動する
